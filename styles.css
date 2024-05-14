@@ -1,6 +1,6 @@
 /* Estilos generales */
 body {
-    font-family: Arial, sans-serif;
+    font-family: Lexend Deca, sans-serif;
     margin: 8px;
     padding: 0;
 }
@@ -11,7 +11,7 @@ body {
 
 .div-1 {
     width: 80%;
-    max-width: 1075px; /* Ajusta este valor según tus necesidades */
+    max-width: 1200px; /* Ajusta este valor según tus necesidades */
     text-align: center;
     /*background-color: #333;
     color: #fff;*/
@@ -34,14 +34,14 @@ body {
 }
 
 .divisor-2 {
-    width: 80%;
-    max-width: 1075px; /* Ajusta este valor según tus necesidades */
+    width: 90%;
+    max-width: 1200px; /* Ajusta este valor según tus necesidades */
     border-bottom: 1px solid #666666;
 }
 
 .div-2 {
-    width: 80%;
-    max-width: 1075px; /* Ajusta este valor según tus necesidades */
+    width: 90%;
+    max-width: 1200px; /* Ajusta este valor según tus necesidades */
     margin: auto;
     /*border: 1px solid black;*/
     padding: 20px;
@@ -50,7 +50,7 @@ body {
 
 .div-3 {
   width: 80%;
-  max-width: 1075px; /* Ajusta este valor según tus necesidades */
+  max-width: 1200px; /* Ajusta este valor según tus necesidades */
   text-align: center;
   background-color: #333;
   color: #fff;
@@ -73,21 +73,10 @@ body {
   grid-gap: 1.5rem 1rem ;
 }
 
-@media screen and (max-width: 768px)  {
-     .uldiv{
-        grid-template-columns: 1fr 1fr;
-     }
-}
-
-.ildiv {
-  display: flex;
-  flex-direction: column;
-}
-
 img {
   width: 200px;
   height: 140px;
-  border-radius: 5px;
+  border-radius: 0;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -96,8 +85,22 @@ img {
  
 }
  .li-texto-div {
+  color: var(--cl-color-text-01);
+  /*text-align: justify;*/
+  font-size: small;
   
   margin-right: 5px;
+
+  h1 {
+    font-weight: bold;
+  }
+
+  p {
+    text-indent: 0px;
+    line-height: 15px;
+    
+  }
+  
  }
 
 .menu-icon {
@@ -157,7 +160,7 @@ h1 {
      /* Convertimos nuestra lista de enlaces en un menú horizontal */
     li {
       display: block;
-      background: #33363b;
+      background: #c0bfbf;
       text-transform: uppercase;
       text-align: center;
       border-bottom: 1px solid #282b30;
@@ -165,7 +168,7 @@ h1 {
        /* Damos estilo a nuestros enlaces */
       a {
         display: block;
-        color: #686868;
+        color: #181414;
         text-decoration: none;
         line-height: 60px;
         padding: 0 26px;
@@ -173,7 +176,7 @@ h1 {
   
         &:active,
         &:focus   {
-          color: #ffffff;
+          color: #00d80b;
         }
       }
     }
@@ -244,74 +247,8 @@ h1 {
 	.social ul li .icon-mail {background: #666666;}
 
 	.social ul li a:hover {
-		background: #000; /* Cambiamos el fondo cuando el usuario pase el mouse */
-		padding: 10px 30px; /* Hacemos mas grande el espacio cuando el usuario pase el mouse */
+		/* Cambiamos el fondo cuando el usuario pase el mouse */
+    background: #000; 
+    /* Hacemos mas grande el espacio cuando el usuario pase el mouse */
+		padding: 10px 30px; 
 	}
-
-
-  @media only screen and (min-width: 768px) {
-    /* ocultamos botón #nav-mobile */
-   #nav-mobile{ display: none; }
-   
-    /* Nuestro nav con id #menu lo flotaremos a la derecha */
-   #menu {
-     width: auto;
-     float: right;
-     top: 0;
-     position: relative;
- 
-     .open-menu {
-       box-shadow: none;
-     }
- 
-      /* Hacemos reset de max-height */
-     ul {
-       max-height: inherit;
-     }
- 
-      /* Alineamos los items de forma horizontal */
-     li {
-       float: left;
-       border: 0;
-       background: transparent;
- 
-       a {
-         display: block;
-         color: #686868;
-         padding: 0 26px;
- 
-         &:hover {
-           color: #ffffff;
-           background: #29292a;
-         }
-       }
-     }
-   }
- }
-
-/* Estilos responsivos 
-@media screen and (max-width: 768px) {
-    .menu-icon {
-        display: block;
-        cursor: pointer;
-    }
-
-    nav ul {
-        display: none;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        background-color: #333;
-        width: 100%;
-        text-align: center;
-    }
-
-    nav ul li {
-        display: block;
-        margin: 10px 0;
-    }
-
-    #menu-toggle:checked + .menu-icon + nav ul {
-        display: block;
-    }
-}*/

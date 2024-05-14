@@ -1,0 +1,85 @@
+
+@media screen and (max-width: 900px)  {
+    .uldiv{
+       grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 700px)  {
+    .uldiv{
+       grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 450px)  {
+    .uldiv{
+       grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    /* ocultamos botón #nav-mobile */
+   #nav-mobile{ display: none; }
+   
+    /* Nuestro nav con id #menu lo flotaremos a la derecha */
+   #menu {
+     width: auto;
+     float: right;
+     top: 0;
+     position: relative;
+ 
+     .open-menu {
+       box-shadow: none;
+     }
+ 
+      /* Hacemos reset de max-height */
+     ul {
+       max-height: inherit;
+     }
+ 
+      /* Alineamos los items de forma horizontal */
+     li {
+       float: left;
+       border: 0;
+       background: transparent;
+ 
+       a {
+         display: block;
+         color: #9a9c9c;
+         padding: 0 26px;
+ 
+         &:hover {
+           color: #ffffff;
+           background: #29292a;
+         }
+       }
+     }
+   }
+ }
+
+/* Estilos responsivos 
+@media screen and (max-width: 768px) {
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+
+    nav ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #333;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    #menu-toggle:checked + .menu-icon + nav ul {
+        display: block;
+    }
+}*/
