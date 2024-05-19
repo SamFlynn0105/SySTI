@@ -261,7 +261,8 @@ h1 {
     max-width: 100%;
     position: relative;
     margin: auto;
-    height: 390px;
+    height: auto;
+    display: flex;
   }
   
   .text-slide-conten {
