@@ -1,89 +1,90 @@
-
-@media screen and (max-width: 900px)  {
-    .uldiv{
-       grid-template-columns: 1fr 1fr 1fr;
-    }
+@media screen and (max-width: 900px) {
+  .uldiv {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
-@media screen and (max-width: 700px)  {
-    .uldiv{
-       grid-template-columns: 1fr 1fr;
+@media screen and (max-width: 700px) {
+  .uldiv {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* estilos Sobre Nosoytros */
+
+  /* fin estilos Sobre Nosoytros */
+
+  .slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+    height: auto;
+  }
+
+  .text-slide-conten {
+    width: 100%;
+
+    .text-slide-title {
+      padding: auto;
     }
-    
-    /* estilos Sobre Nosoytros */
+  }
 
-    /* fin estilos Sobre Nosoytros */
+  .img-slide {
+    width: 100%;
 
-    .slideshow-container {
-      max-width: 100%;
-      position: relative;
-      margin: auto;
-      height: auto;
-    }
-
-    .text-slide-conten {
+    img {
       width: 100%;
-    
-      .text-slide-title {
-        padding: auto;
-      }
+      height: 100%;
     }
-    
-    .img-slide {
-      width: 100%;
-    
-      img {
-        width: 100%;
-        height: 100%;
-      }
-    }
+  }
 }
 
-@media screen and (max-width: 450px)  {
-    .uldiv{
-       grid-template-columns: 1fr;
-    }
+@media screen and (max-width: 450px) {
+  .uldiv {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media only screen and (min-width: 768px) {
-    /* ocultamos botón #nav-mobile */
-   #nav-mobile{ display: none; }
-   
-    /* Nuestro nav con id #menu lo flotaremos a la derecha */
-   #menu {
-     width: auto;
-     float: right;
-     top: 0;
-     position: relative;
- 
-     .open-menu {
-       box-shadow: none;
-     }
- 
-      /* Hacemos reset de max-height */
-     ul {
-       max-height: inherit;
-     }
- 
-      /* Alineamos los items de forma horizontal */
-     li {
-       float: left;
-       border: 0;
-       background: transparent;
- 
-       a {
-         display: block;
-         color: #9a9c9c;
-         padding: 0 26px;
- 
-         &:hover {
-           color: #ffffff;
-           background: #29292a;
-         }
-       }
-     }
-   }
- }
+  /* ocultamos botón #nav-mobile */
+  #nav-mobile {
+    display: none;
+  }
+
+  /* Nuestro nav con id #menu lo flotaremos a la derecha */
+  #menu {
+    width: auto;
+    float: right;
+    top: 0;
+    position: relative;
+
+    .open-menu {
+      box-shadow: none;
+    }
+
+    /* Hacemos reset de max-height */
+    ul {
+      max-height: inherit;
+    }
+
+    /* Alineamos los items de forma horizontal */
+    li {
+      float: left;
+      border: 0;
+      background: transparent;
+
+      a {
+        display: block;
+        color: #9a9c9c;
+        padding: 0 26px;
+
+        &:hover {
+          color: #ffffff;
+          background: #29292a;
+        }
+      }
+    }
+  }
+}
 
 /* Estilos responsivos 
 @media screen and (max-width: 768px) {

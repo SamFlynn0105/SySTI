@@ -1,53 +1,64 @@
 /* Estilos generales */
 body {
-    font-family: Lexend Deca, sans-serif;
-    margin: 8px;
-    padding: 0;
+  font-family: "Inconsolata", monospace;
+  font-optical-sizing: auto;
+  margin: 8px;
+  padding: 0;
 }
+
+/*// <uniquifier>: Use a unique and descriptive class name
+
+.inconsolata-<uniquifier> {
+  font-family: "Inconsolata", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}*/
 
 /*header {
    
 }*/
 
 .div-1 {
-    width: 80%;
-    max-width: 1200px; /* Ajusta este valor según tus necesidades */
-    text-align: center;
-    /*background-color: #333;
+  width: 80%;
+  max-width: 1200px; /* Ajusta este valor según tus necesidades */
+  text-align: center;
+  /*background-color: #333;
     color: #fff;*/
-    padding: 20px;
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /*border-radius: 10px;*/
-    align-items: center;
-    margin: auto;
-    /*border-bottom: 1px solid #000;
+  padding: 20px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /*border-radius: 10px;*/
+  align-items: center;
+  margin: auto;
+  /*border-bottom: 1px solid #000;
     background-image: linear-gradient(to top,#86b7e9 30%, #ffffff 70%);*/
 }
 
 .divisor {
-    width: 100%;
-    border-bottom: 2px solid #666666;
-    margin: auto;
+  width: 100%;
+  border-bottom: 2px solid #666666;
+  margin: auto;
 }
 
 .divisor-2 {
-    width: 90%;
-    max-width: 1200px; /* Ajusta este valor según tus necesidades */
-    border-bottom: 1px solid #666666;
-    margin: auto;
-
+  width: 90%;
+  max-width: 1200px; /* Ajusta este valor según tus necesidades */
+  border-bottom: 1px solid #666666;
+  margin: auto;
 }
 
 .div-2 {
-    width: 90%;
-    max-width: 1200px; /* Ajusta este valor según tus necesidades */
-    margin: auto;
-    /*border: 1px solid black;*/
-    padding: 5px;
-    /*border-radius: 10px;*/
+  width: 90%;
+  max-width: 1200px; /* Ajusta este valor según tus necesidades */
+  margin: auto;
+  /*border: 1px solid black;*/
+  padding: 5px;
+  /*border-radius: 10px;*/
 }
 
 .div-3 {
@@ -67,30 +78,29 @@ body {
 }
 
 .uldiv {
-  list-style-type:none;
+  list-style-type: none;
   padding: 0;
   margin: 0;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 1.5rem 1rem ;
+  grid-gap: 1.5rem 1rem;
 }
 
 img {
   width: 200px;
   height: 140px;
   border-radius: 0;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  /*box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);*/
 }
 
 .li-img-div {
   margin-right: 5px;
- 
 }
- .li-texto-div {
+.li-texto-div {
   color: var(--cl-color-text-01);
   /*text-align: justify;*/
   font-size: small;
-  
+
   margin-right: 5px;
 
   h1 {
@@ -100,13 +110,11 @@ img {
   p {
     text-indent: 0px;
     line-height: 15px;
-    
   }
-  
- }
+}
 
 .menu-icon {
-    display: none;
+  display: none;
 }
 
 /*nav ul {
@@ -126,7 +134,7 @@ nav ul li a {
 }*/
 
 section {
-    padding: 40px 20px;
+  padding: 40px 20px;
 }
 
 /*footer {
@@ -135,200 +143,207 @@ section {
 
 /* Estilos específicos */
 h1 {
-    margin: 0;
+  margin: 0;
 }
 
 /*nav ul li a:hover {
     color: #ffcc00;
 }*/
 
- /* Fijamos nuestro nav en 100% ancho */
- #menu {
-    position: absolute;
-    top: 80px;
-    width: 100%;
-    right: 0px;
-  
-     /* Quitamos estilos por defecto de el tag UL */
-    ul {
-      max-height: 0;
-      overflow: hidden;
-      margin: 0;
-      padding: 0;
-      list-style: none;
-      font-size: 14px;
-    }
-  
-     /* Convertimos nuestra lista de enlaces en un menú horizontal */
-    li {
+/* Fijamos nuestro nav en 100% ancho */
+#menu {
+  position: absolute;
+  top: 80px;
+  width: 100%;
+  right: 0px;
+
+  /* Quitamos estilos por defecto de el tag UL */
+  ul {
+    max-height: 0;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 14px;
+  }
+
+  /* Convertimos nuestra lista de enlaces en un menú horizontal */
+  li {
+    display: block;
+    background: #c0bfbf;
+    text-transform: uppercase;
+    text-align: center;
+    border-bottom: 1px solid #282b30;
+
+    /* Damos estilo a nuestros enlaces */
+    a {
       display: block;
-      background: #c0bfbf;
-      text-transform: uppercase;
-      text-align: center;
-      border-bottom: 1px solid #282b30;
-  
-       /* Damos estilo a nuestros enlaces */
-      a {
-        display: block;
-        color: #181414;
-        text-decoration: none;
-        line-height: 60px;
-        padding: 0 26px;
-        border-radius: 5px;
-  
-        &:active,
-        &:focus   {
-          color: #00d80b;
-        }
+      color: #181414;
+      text-decoration: none;
+      line-height: 60px;
+      padding: 0 26px;
+      border-radius: 5px;
+
+      &:active,
+      &:focus {
+        color: #00d80b;
       }
     }
-  
-     /* Agregamos una animación al despliegue del menú */
-    .open-menu {
-      box-shadow: 0 1px 2px rgba(0,0,0,.5);
-      max-height: 400px;
-      transition: max-height .4s ease;
-    }
   }
 
- /* Botón mostrar menú */
+  /* Agregamos una animación al despliegue del menú */
+  .open-menu {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    max-height: 400px;
+    transition: max-height 0.4s ease;
+  }
+}
+
+/* Botón mostrar menú */
 #nav-mobile {
-    background: transparent;
-    border: 0;
-    cursor: pointer;
-    float: right;
-    width: 60px;
-    height: 60px;
-    position: absolute;
-    right: 0px;
-    top: -70px;
-    opacity: 0.6;
-  
-     /* Agregaremos esta clase a #nav-mobile, cuando el menu mobile haya sido desplegado */
-    &.nav-open {
-      opacity: 1;
-    }
-  
-    span {
-      display: block;
-      width: 60%;
-      margin: 4px auto;
-      height: 4px;
-      background: #000000
-    }
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  float: right;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  right: 0px;
+  top: -70px;
+  opacity: 0.6;
+
+  /* Agregaremos esta clase a #nav-mobile, cuando el menu mobile haya sido desplegado */
+  &.nav-open {
+    opacity: 1;
   }
 
+  span {
+    display: block;
+    width: 60%;
+    margin: 4px auto;
+    height: 4px;
+    background: #000000;
+  }
+}
 
 /* seccion  contacto*/
 .social {
-	position: relative; /* Hacemos que la posición en pantalla sea fija para que siempre se muestre en pantalla*/
-	/*left: 0; /* Establecemos la barra en la izquierda */
-    top: 50px; /* Bajamos la barra 200px de arriba a abajo */
-	z-index: 2000; /* Utilizamos la propiedad z-index para que no se superponga algún otro elemento como sliders, galerías, etc */
+  position: relative; /* Hacemos que la posición en pantalla sea fija para que siempre se muestre en pantalla*/
+  /*left: 0; /* Establecemos la barra en la izquierda */
+  top: 50px; /* Bajamos la barra 200px de arriba a abajo */
+  z-index: 2000; /* Utilizamos la propiedad z-index para que no se superponga algún otro elemento como sliders, galerías, etc */
 }
 
-	.social ul {
-		list-style:none;
-	}
+.social ul {
+  list-style: none;
+}
 
-	.social ul li a {
-		display: block;
-        width: 100px;
-		color:#fff;
-		background: #000;
-		padding: 10px 15px;
-		text-decoration: none;
-		-webkit-transition:all 500ms ease;
-		-o-transition:all 500ms ease;
-		transition:all 500ms ease; /* Establecemos una transición a todas las propiedades */
-	}
+.social ul li a {
+  display: block;
+  width: 100px;
+  color: #fff;
+  background: #000;
+  padding: 10px 15px;
+  text-decoration: none;
+  -webkit-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease; /* Establecemos una transición a todas las propiedades */
+}
 
-	.social ul li .icon-facebook {background:#3b5998;} /* Establecemos los colores de cada red social, aprovechando su class */
-	.social ul li .icon-linkedin {background: #00abf0;}
-    .social ul li .icon-github {background: #242526;}
-	.social ul li .icon-mail {background: #666666;}
+.social ul li .icon-facebook {
+  background: #3b5998;
+} /* Establecemos los colores de cada red social, aprovechando su class */
+.social ul li .icon-linkedin {
+  background: #00abf0;
+}
+.social ul li .icon-github {
+  background: #242526;
+}
+.social ul li .icon-mail {
+  background: #666666;
+}
 
-	.social ul li a:hover {
-		/* Cambiamos el fondo cuando el usuario pase el mouse */
-    background: #000; 
-    /* Hacemos mas grande el espacio cuando el usuario pase el mouse */
-		padding: 10px 30px; 
-	}
+.social ul li a:hover {
+  /* Cambiamos el fondo cuando el usuario pase el mouse */
+  background: #000;
+  /* Hacemos mas grande el espacio cuando el usuario pase el mouse */
+  padding: 10px 30px;
+}
 
-  /* styles Sobre Nosotros */
+/* styles Sobre Nosotros */
 
-  .slideshow-container {
-    max-width: 100%;
-    position: relative;
-    margin: auto;
-    height: auto;
-    display: flex;
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+  height: auto;
+  display: flex;
+}
+
+.text-slide-conten {
+  width: 40%;
+  float: left;
+
+  .text-slide-title {
+    padding: auto;
   }
-  
-  .text-slide-conten {
-    width: 40%;
-    float: left;
-  
-    .text-slide-title {
+
+  .text-slide-descrip {
+    p {
       padding: auto;
     }
-  
-    .text-slide-descrip{
-      p {
-        padding: auto;
-      }
-    }
   }
-  
-  .img-slide {
-    width: 60%;
-    float: right;
-  
-    img {
-      width: 100%;
-      height: 100%;
-    }
-  }
-  
-  .mySlides {
-    display: none;
-  }
-  
-  .fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }
-  
-  @keyframes fade {
-    from {
-      opacity: 0.4;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  
-  .sig-prev-slide {
-    max-width: 90%;
-    text-align: right;
-    margin: auto;
-    padding: 5px;
-  }
-  
-  /* Estilos para los botones de navegación */
-  .prev, .next {
-    cursor: pointer;
-    position: relative;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -22px;
-    color: rgb(0, 0, 0);
-    font-weight: bold;
-    font-size: 20px;
-    /*transition: 5s ease;*/
-    border-radius: 0 3px 3px 0;
-  }
+}
 
-  /* terminan styles Sobre Nosotros */
+.img-slide {
+  width: 60%;
+  float: right;
 
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.mySlides {
+  display: none;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.sig-prev-slide {
+  max-width: 90%;
+  text-align: right;
+  margin: auto;
+  padding: 5px;
+}
+
+/* Estilos para los botones de navegación */
+.prev,
+.next {
+  cursor: pointer;
+  position: relative;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 20px;
+  /*transition: 5s ease;*/
+  border-radius: 0 3px 3px 0;
+}
+
+/* terminan styles Sobre Nosotros */
